@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soustack Embed — Basic ESM Demo</title>
+    <link rel="stylesheet" href="../dist/soustack-embed.css" />
+    <style>
+      body {
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        background: #f1f5f9;
+        color: #0f172a;
+        padding: 32px;
+      }
+      .demo-shell {
+        max-width: 960px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo-shell">
+      <h1>Soustack Embed</h1>
+      <p>
+        This page loads the ESM bundle, pulls a Soustack artifact via <code>data-soustack</code>, and scales it to
+        two servings while customizing the accent color.
+      </p>
+
+      <div id="soustack-card" data-soustack="./assets/bright-lentil.soustack.json" data-servings="2"></div>
+    </div>
+
+    <script type="module">
+      import SoustackEmbed from '../dist/soustack-embed.esm.js';
+
+      SoustackEmbed.renderEmbeds({
+        selector: '#soustack-card',
+        theme: {
+          accent: '#22c55e',
+          cardBorder: '#dcfce7',
+        },
+      });
+    </script>
+  </body>
+</html>

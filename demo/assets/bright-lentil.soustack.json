@@ -1,0 +1,30 @@
+{
+  "recipe": {
+    "name": "Bright Lentil Salad",
+    "description": "A citrusy lentil salad with herbs, crisp vegetables, and a punchy lemon dressing.",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+    "servings": 4,
+    "totalTime": "PT35M",
+    "ingredients": [
+      { "quantity": 1, "unit": "cup", "item": "green lentils", "note": "rinsed" },
+      { "quantity": 3, "unit": "cup", "item": "vegetable broth" },
+      { "quantity": 1, "unit": "", "item": "lemon", "note": "zested and juiced" },
+      { "quantity": 0.25, "unit": "cup", "item": "olive oil" },
+      { "quantity": 1, "unit": "", "item": "shallot", "note": "finely minced" },
+      { "quantity": 0.5, "unit": "cup", "item": "parsley", "note": "chopped" },
+      { "quantity": 0.5, "unit": "cup", "item": "cucumber", "note": "diced" },
+      { "quantity": 0.25, "unit": "cup", "item": "feta cheese", "note": "crumbled" },
+      { "quantity": 0.5, "unit": "tsp", "item": "sea salt", "note": "plus more to taste" },
+      { "quantity": 0.25, "unit": "tsp", "item": "black pepper" }
+    ],
+    "steps": [
+      { "text": "Simmer lentils in vegetable broth until tender, about 20 minutes." },
+      { "text": "Whisk lemon juice, zest, olive oil, salt, and pepper to make the dressing." },
+      { "text": "Fold warm lentils with shallot, cucumber, and parsley. Toss with dressing." },
+      { "text": "Top with feta just before serving." }
+    ],
+    "author": "Soustack Test Kitchen",
+    "url": "https://example.com/bright-lentil-salad",
+    "tags": ["vegetarian", "meal-prep", "make-ahead"]
+  }
+}
