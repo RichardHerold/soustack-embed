@@ -77,19 +77,30 @@ This package is a distribution wrapper. To update the vendored artifacts:
 
 1. Build the embed in `soustack-blocks`:
    ```sh
-   cd soustack-blocks
+   cd ../soustack-blocks
    npm run build
    ```
 
-2. Copy the dist files:
+2. Sync the dist files to this repo:
    ```sh
-   cp -r soustack-blocks/packages/embed/dist/* ./dist/
+   cd ../soustack-embed
+   npm run sync:dist
    ```
 
 3. Verify the dist files:
    ```sh
    npm run verify:dist
    ```
+
+4. Publish:
+   ```sh
+   npm publish
+   ```
+
+The `sync:dist` script expects a sibling directory layout (`../soustack-blocks/packages/embed/dist`). To use a custom path:
+```sh
+npm run sync:dist -- --from /path/to/soustack-blocks/packages/embed/dist
+```
 
 ## Styling
 Base styles are included in the bundle and injected automatically when the script runs. Override CSS variables on the host element (e.g., `--soustack-accent`, `--soustack-card-bg`) or pass a `theme` object.

@@ -21,7 +21,8 @@
   "jsdelivr": "./dist/embed.umd.js",
   "scripts": {
     "prepublishOnly": "npm run verify:dist",
-    "verify:dist": "node scripts/verify-dist.mjs"
+    "verify:dist": "node scripts/verify-dist.mjs",
+    "sync:dist": "node scripts/sync-dist.mjs"
   },
   "keywords": [
     "soustack",
