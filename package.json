@@ -1,10 +1,27 @@
 {
-  "name": "soustack-embed",
+  "name": "@soustack/embed",
   "version": "0.1.0",
+  "type": "module",
   "description": "Drop-in Soustack recipe embed with ESM and UMD bundles.",
   "license": "MIT",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    "import": "./dist/embed.es.js",
+    "require": "./dist/embed.umd.js",
+    "types": "./dist/index.d.ts"
+  },
+  "main": "./dist/embed.umd.js",
+  "module": "./dist/embed.es.js",
+  "types": "./dist/index.d.ts",
+  "unpkg": "./dist/embed.umd.js",
+  "jsdelivr": "./dist/embed.umd.js",
   "scripts": {
-    "build": "node scripts/build.js"
+    "prepublishOnly": "npm run verify:dist",
+    "verify:dist": "node scripts/verify-dist.mjs"
   },
   "keywords": [
     "soustack",
